@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>👩‍🏫 Teacher Dashboard</h1>
+
+<div class="card">
+  <h2>Add Question</h2>
+
+  <input id="question" placeholder="Enter question" />
+  <input id="o1" placeholder="Option 1" />
+  <input id="o2" placeholder="Option 2" />
+  <input id="o3" placeholder="Option 3" />
+  <input id="o4" placeholder="Option 4" />
+  <input id="answer" type="number" placeholder="Correct option (1-4)" />
+
+  <button onclick="addQuestion()">Add Question</button>
+</div>
+
+<div class="card">
+  <h2>Questions Added</h2>
+  <ul id="questionList"></ul>
+</div>
+
+<div class="card">
+  <h2>Student Exam Link</h2>
+  <button onclick="generateLink()">Generate Link</button>
+  <p id="examLink"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
 
